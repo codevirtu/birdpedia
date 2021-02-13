@@ -18,9 +18,9 @@ func getBirdHandler(w http.ResponseWriter, r *http.Request) {
 	/*
 		The list of birds is now taken from the store instead of the package level `birds` variable we had earlier
 
-		The `store` variable is the package level variable that we defined in 
+		The `store` variable is the package level variable that we defined in
 		`store.go`, and is initialized during the initialization phase of the application
-	*/ 
+	*/
 	birds, err := store.GetBirds()
 
 	// Everything else is the same as before
